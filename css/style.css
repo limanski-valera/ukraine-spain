@@ -162,7 +162,6 @@ body {
   color: #fff
 }
 .link {
-  font-size: .875rem;
   font-weight: 500;
   text-decoration: underline;
   transition: color .3s
@@ -370,6 +369,7 @@ body {
 .review__header {
   display: flex;
   align-items: flex-start;
+  justify-content: space-between;
   gap: .9375rem;
   margin-bottom: 1rem
 }
@@ -428,6 +428,7 @@ body {
   border-radius: 50px;
   background-color: #ececec;
   flex: 0 0 auto;
+  cursor: pointer;
   transition: width .3s,background-color .3s
 }
 .swiper-pagination-bullet-active {
@@ -469,6 +470,9 @@ body {
     align-items: flex-start;
     margin-top: -2rem
   }
+  .review__person {
+    align-items: center
+  }
 }
 @media (min-width:47.99875em) {
   .button {
@@ -500,10 +504,26 @@ body {
     display: flex;
     justify-content: center
   }
+  .review__person {
+    gap: .9375rem
+  }
+  .review__person-photo {
+    width: 3.75rem;
+    height: 3.75rem
+  }
+  .review__person-name {
+    font-size: 1.25rem
+  }
+  .review__text {
+    font-size: 1.125rem
+  }
 }
 @media (min-width:75.125em) {
   .title {
     font-size: 3rem
+  }
+  .link {
+    font-size: 1.125rem
   }
   .main-block {
     margin-bottom: 2.5rem
@@ -534,11 +554,11 @@ body {
   .button {
     display: block
   }
+}
+@media (max-width:29.99875em) {
   .steps__link-wrapper {
     text-align: center
   }
-}
-@media (max-width:29.99875em) {
   .benefits__title {
     max-width: 15.625rem
   }
@@ -546,6 +566,9 @@ body {
 @media (max-width:22.5em) {
   .title {
     font-size: 1.5rem
+  }
+  .link {
+    font-size: .875rem
   }
   .main-block {
     margin-bottom: 1.1875rem
@@ -576,6 +599,9 @@ body {
   .title {
     font-size: clamp(1.5rem ,.8586698337rem + 2.8503562945vw ,3rem)
   }
+  .link {
+    font-size: clamp(.875rem ,.768111639rem + .4750593824vw ,1.125rem)
+  }
   .main-block {
     margin-bottom: clamp(1.1875rem ,.6263361045rem + 2.4940617577vw ,2.5rem)
   }
@@ -602,6 +628,9 @@ body {
   }
 }
 @media (any-hover:hover) {
+  .button:hover {
+    background-color: #22768d
+  }
   .link:hover {
     color: #298ba7
   }
